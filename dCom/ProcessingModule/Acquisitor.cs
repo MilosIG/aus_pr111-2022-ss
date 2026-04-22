@@ -58,12 +58,12 @@ namespace ProcessingModule
         /// u zavisnosti od njihovog intervala ocitavanja.
         /// </summary>
         private void Acquisition_DoWork()
-		{
+        {
             try
             {
                 while (true)
                 {
-                    acquisitionTrigger.WaitOne(1000);
+                    Thread.Sleep(1000);
 
                     List<IConfigItem> configItems = configuration.GetConfigurationItems();
 
