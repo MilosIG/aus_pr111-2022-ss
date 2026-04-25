@@ -142,6 +142,7 @@ namespace ProcessingModule
         {
             point.RawValue = newValue;
             point.Timestamp = DateTime.Now;
+            point.EguValue = newValue;
         }
 
         /// <inheritdoc />
